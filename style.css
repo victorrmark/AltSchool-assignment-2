@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body{
+    background-color:  #F7FDFC;
+    padding: 2.5rem;
+}
+
+header div{
+    margin: 2rem 0rem;
+    font-family: brown-pro, sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 1.7;
+    font-weight: 700;
+}
+
+header p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+main{
+    /* margin: 0 1rem; */
+    background: #ffffff;
+    border-radius: .6rem;
+    box-shadow: 0 .4rem  5rem 0  rgba(4, 8, 19, 0.102);
+    
+}
+
+form{
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-family: sofia-pro, sans-serif;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.4rem;
+    font: 'sofia pro';
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: .5rem
+}
+
+input, select{
+    font: 'Sofia Pro';
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #F0F0F0;
+    border-radius: .2rem;
+}
+
+input:focus{
+    border: .1rem solid #2EC4B6;
+    outline: none;
+    border-radius: .2rem;
+    box-shadow: 0 0 2px 0#2EC4B6;
+}
+
+input[type="submit"]{
+    color: #ffffff;
+    background: #2EC4B6;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow:  0 0 3px 0 rgba(0, 0, 0, 0.102);
+    margin-top: 1.5rem;
+}
+
+input[type="submit"]:hover{
+    box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.202);
+}
+
+footer{
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 .5rem;
+    font-family: sofia-pro, sans-serif;
+}
+
+footer p{
+    font: 'Sofia Pro';
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+a{
+    font: 'Sofia Pro';
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #2EC4B6; 
+}
+
+.desktop{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 7rem 2rem;
+        gap: 10rem;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    header{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    h2{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    img{
+        width: 70px;
+    }
+
+    main{
+        width: 47%;
+    }
+
+    form{
+        padding: 3.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* column-gap: 2rem; */
+    }
+
+    form div{
+        width: 47%;
+    }
+
+    .full-width, input[type="submit"], .foot-text{
+        width: 100%;
+    }
+
+    .foot-text p{
+        font: 'Sofia Pro';
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 0 .5rem;
+        text-align: center;
+    }
+
+    .mobile{
+        display: none;
+    }
+}
